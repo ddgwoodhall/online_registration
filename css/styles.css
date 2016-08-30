@@ -1,0 +1,292 @@
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700';
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+
+}
+header {
+  font-size: 12px;
+  padding: 15px;
+  text-align: center;
+  background-color: #1c2b3b;
+  color: #fff;
+}
+
+header h1 {
+  font-weight: 400;
+}
+
+#form-header {
+  max-width: 90%;
+  margin: 60px auto 0;
+  text-align: center;
+  border-bottom: 3px solid #1c2b3b;
+}
+
+
+#form-header p {
+  margin-bottom: 50px;
+}
+
+form {
+  border-top: 2px solid #1c2b3b;
+  max-width: 90%;
+  margin: 3px auto;
+  padding-top: 50px;
+}
+
+.label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+label, #form-header p {
+  color: rgba(38, 58, 80, 0.7);
+  font-family: 'Merriweather', serif;
+  font-weight:300;
+}
+
+input[type="text"], select, textarea {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e6e6e6;
+  font-family: 'Merriweather', serif;
+  color: #8a97a0;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align:right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #8a97a0;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  text-align:right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  text-align:right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  text-align:right;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+input[type="text"]:focus, textarea:focus {
+  box-shadow: inset 0 0 0 2px #0e647d;
+
+}
+
+input[type="text"]:after {
+  text-align: left;
+}
+
+textarea {
+  height: 100px;
+}
+
+#zip-code {
+  width: 150px;
+}
+
+
+select {
+    padding: 6px;
+    height: 48px;
+}
+
+
+
+fieldset {
+  margin: 0 0 50px 0;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #1c2b3b;
+
+}
+
+.newsletter {
+  margin-bottom: 0;
+}
+
+.newsletter {
+  border: none;
+}
+
+.contact-info {
+  padding-bottom: 2px
+}
+
+legend {
+  margin: 25px 0;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: 'Merriweather', sarif;
+}
+
+.newsletter > label {
+  display: block;
+}
+
+.instruction {
+  margin: 15px 0px 10px 0px;
+}
+
+
+.newsletter .platform:nth-of-type(-n+2), .newsletter .platform:nth-of-type(4) {
+  margin-bottom: 8px;
+}
+
+
+/*******************************************************
+Checkboxes and Radio Button Styles
+********************************************************/
+
+
+.platform {
+  position: relative;
+
+}
+
+/*Radio Square*/
+.control__indicator {
+  position: absolute;
+  top: 0px;
+	left:0px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+  margin-right: 8px;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+/*Radio Circle*/
+.platform input[type="radio"] + .control__indicator {
+  border-radius: 50%;
+}
+
+
+label[for$="news"] {
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+label[for$="format"] {
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+
+/*hide original checkbox*/
+.platform  input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/*Checked state complete*/
+.platform input:checked + .control__indicator {
+  background: #e6e6e6;
+  border: 2px solid #0e647d;
+  box-sizing: border-box;
+}
+
+
+
+ /*Check mark*/
+.control__indicator::after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+ /*Show check or inner circle */
+.platform input:checked ~ .control__indicator::after {
+	display: block;
+}
+
+ /*Checkbox tick*/
+.platform .control__indicator::after {
+	top: 2px;
+	left: 6px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #0e647d;
+	border-width: 0 2px 2px 0;
+}
+
+
+
+/*Radio Inner Circle*/
+.platform input[type="radio"] + .control__indicator::after {
+  top: 3px;
+	left: 3px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #0e647d;
+}
+
+
+/**************************************************************/
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #36a9a1;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Merriweather', sarif;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+footer{
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(38, 58, 80, 0.7);
+  margin-bottom: 150px;
+
+}
+
+@media screen and (min-width: 760px) {
+
+
+input[type="text"], select {
+  max-width: calc(100% - 205px);
+}
+
+
+.label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#form-header, form {
+  max-width: 600px;
+}
+}

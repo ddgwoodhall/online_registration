@@ -1,0 +1,18 @@
+@media screen and (min-width: 760px) {
+
+
+input[type="text"], select {
+  max-width: calc(100% - 205px);
+}
+
+
+.label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#form-header, form {
+  max-width: 600px;
+}
