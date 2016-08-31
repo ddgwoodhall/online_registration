@@ -95,9 +95,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, te
 
 }
 
-input[type="text"]:after {
-  text-align: left;
-}
 
 textarea {
   height: 100px;
@@ -112,7 +109,6 @@ select {
     padding: 6px;
     height: 48px;
 }
-
 
 
 fieldset {
