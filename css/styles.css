@@ -183,12 +183,7 @@ Checkboxes and Radio Button Styles
 }
 
 
-label[for$="news"] {
-	padding-left: 30px;
-	cursor: pointer;
-}
-
-label[for$="format"] {
+label[for$="news"], label[for$="format"] {
 	padding-left: 30px;
 	cursor: pointer;
 }
